@@ -80,10 +80,6 @@ echo "NODE_ENV=production" >> .env.local
    git push -u origin main
    ```
 </details>
-
----
-
-
 <details>
 <summary>How to Deploy to Vercel and Add Environment Variables:</summary>
 
