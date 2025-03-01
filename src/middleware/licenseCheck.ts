@@ -4,9 +4,11 @@ import type { NextRequest } from 'next/server';
 export async function licenseMiddleware(request: NextRequest) {
   try {
     // Get license key dynamically from request headers
-    const licenseKey = request.headers.get('x-license-key') 
-  ?? process.env.LICENSE_KEY 
-  ?? "";
+    if (process.env.NODE_ENV === 'production') {
+      const licenseKey = process.env.LICENSE_KEY;
+      if (!licenseKey) {
+        return NextResponse.redirect(new URL('/license', request.url));
+      }
     
     // Verify license with Gumroad API
     const response = await fetch('https://api.gumroad.com/v2/licenses/verify', {
@@ -26,7 +28,7 @@ export async function licenseMiddleware(request: NextRequest) {
     if (!success || purchase?.refunded || purchase?.disputed) {
       throw new Error('Invalid or revoked license');
     }
-
+  }
     return NextResponse.next();
 
   } catch (error) {

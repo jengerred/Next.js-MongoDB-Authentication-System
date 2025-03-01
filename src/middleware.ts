@@ -50,10 +50,13 @@ if(licenseCheck) return licenseCheck
 
 // Configure which routes the middleware should run on
 // NOTE: This ensures the middleware only runs on dashboard routes, optimizing performance
-/*export const config = {
+/*
+export const config = {
   matcher: ['/dashboard/:path*'], // Apply to all routes starting with '/dashboard'
 }
   */
+
+
 export const config = {
   matcher: [
     // Protect all routes except:

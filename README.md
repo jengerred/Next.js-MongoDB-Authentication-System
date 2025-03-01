@@ -214,7 +214,6 @@ npm install
 ```plaintext
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-NODE_ENV=production
 Runtime=nodejs
 ```
 <details>
@@ -317,7 +316,7 @@ To deploy this project using Vercel:
 3. **Configure Environment Variables**  
    During the setup process, you'll be prompted to add environment variables. Add the following from your `.env.local` file:
    ```
-   NODE_ENV=production
+   NODE_ENV=production            # For production mode
    Runtime=nodejs
    MONGO_URI=
    JWT_SECRET=
