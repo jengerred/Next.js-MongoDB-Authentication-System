@@ -19,6 +19,7 @@ echo "NODE_ENV=production" >> .env.local
 ```
 * Replace with your real keys 
 
+<details>
 <summary>How to Get Your MongoDB Connection String</summary>
  
    
