@@ -1,5 +1,31 @@
 # 🔐 Reusable NEXT.js User Authentication System
 
+## 🚀 Get Started
+
+### Have a Commercial License Key? (Production Use)
+1. Clone repo & install:
+```bash
+git clone https://github.com/jengerred/Reusable-NEXT-User-Auth.git
+cd Reusable-NEXT-User-Auth
+npm install
+```
+2. Create and configure `.env.local`:
+```bash
+touch .env.local
+echo "LICENSE_KEY=your_gumroad_key" >> .env.local # From purchase receipt 
+echo "MONGO_URI=your_mongodb_connection_string" >> .env.local
+echo "JWT_SECRET=your_jwt_secret_key" >> .env.local
+```
+Be sure to replace with your real keys
+
+3. Deploy to Vercel:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo)
+
+🎉 Congratulations! Your project is now live! 🎉
+
+### Just Exploring Locally? (Free & Open Source)
+Great! It's completely Free for personal and educational use!
+
 ## **Overview**
 This repository contains a secure, reusable authentication system built with **NEXT.js**, **MongoDB**, and **Vercel**. The project demonstrates best practices in mobile and web application security, including password hashing, token-based authentication, and data encryption. It adheres to industry standards like the **OWASP Mobile Application Security Verification Standard (MASVS)** and integrates robust security measures to protect user data.
 
@@ -29,12 +55,30 @@ You can view the live version of this project here:
 
 ---
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.
+## License & Commercial Use
 
-### Commercial Use
-While this project is **FREE for personal and educational use** under the MIT License, **commercial use requires purchasing a license**.  
-Visit [Buy Commercial License](https://gumroad.com/your-link) for details.
+### Free Local Development 
+This project is **free for personal and educational use** under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](./LICENSE).  
+You may:
+- Use locally for learning and experimentation
+- Modify and study the code
+- Share with proper attribution
+
+🚫 **Commercial Restrictions**  
+You may **not**:
+- Deploy to production environments
+- Use in client projects or SaaS applications
+- Redistribute modified versions commercially
+
+### Commercial Deployment 
+For production use and commercial applications:  
+**[Purchase Commercial License](https://gumroad.com/your-link)** ($97 one-time)  
+Includes:
+- Production deployment rights
+- Priority email support
+- Free updates through 2026
+
+[View Commercial License Terms](./COMMERCIAL_LICENSE.md)
 
 ---
 
@@ -128,11 +172,19 @@ Start the development server locally:
 ```bash
 npm run dev
 ```
-Visit `http://localhost:3000` in your browser to view the app.
+🎉 Congratulations! You can now visit `http://localhost:3000` in your browser to view the app. 🎉
+
+---
+## 🚀 Deployment
+
+### Ready to Go Live? 
+**Commercial License Required for Production Deployment**  
+[Purchase License Key](https://gumroad.com/your-link) ($97) → Enables production builds and Vercel deployment
 
 ---
 
-## Deployment
+### Simple Production Deployment (With License Key)
+
 To deploy this project using Vercel:
 ### 1. Push your repository to GitHub
 <details>
@@ -181,6 +233,7 @@ To deploy this project using Vercel:
    Runtime=nodejs
    MONGO_URI=
    JWT_SECRET=
+   LICENSE_KEY=your_gumroad_key    # From purchase receipt
    ```
    Ensure these match the values in your `.env.local` file.
 
@@ -196,8 +249,8 @@ To deploy this project using Vercel:
 2. Test all routes (`/login`, `/register`, `/dashboard`) to ensure they work as expected.
 3. Check your MongoDB Atlas database to confirm that user data is being stored correctly.
 
-By following these steps, your application will be live and ready for use!
 
+🎉 Congratulations! Your project is now live! 🎉
 ---
 ## **Why This Project is Secure**
 1. **Password Security**:

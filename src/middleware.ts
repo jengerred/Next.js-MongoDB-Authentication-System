@@ -2,11 +2,19 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { verifyJWT } from './lib/auth';
 
+// import commercial license check 
+import { licenseMiddleware } from './middleware/licenseCheck';
+
+
 // NOTE: This middleware function protects routes by checking for a valid JWT token.
 // It runs before the request is completed and can redirect unauthenticated users.
 
 // Define the middleware function to handle incoming requests
 export async function middleware(request: NextRequest) {
+
+// check for commercial license
+const licenseCheck = licenseMiddleware(request)
+if(licenseCheck) return licenseCheck
 
   // Extract the token from the request cookies
   // NOTE: The token is stored in an HTTP-only cookie for security
