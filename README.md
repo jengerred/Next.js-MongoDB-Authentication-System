@@ -23,8 +23,12 @@ Be sure to replace with your real keys
 
 ## 🎉 Congratulations! Your project is now live! 🎉
 
-### Just Exploring Locally? (Free & Open Source)
-## Great! It's completely Free for personal and educational use!
+---
+
+## Just Exploring Locally? 
+# Great! It's Open Source and completely Free for personal and educational use!
+
+---
 
 ## **Overview**
 This repository contains a secure, reusable authentication system built with **NEXT.js**, **MongoDB**, and **Vercel**. The project demonstrates best practices in mobile and web application security, including password hashing, token-based authentication, and data encryption. It adheres to industry standards like the **OWASP Mobile Application Security Verification Standard (MASVS)** and integrates robust security measures to protect user data.
@@ -58,7 +62,7 @@ You can view the live version of this project here:
 ## License & Commercial Use
 
 ### Free Local Development 
-This project is **free for personal and educational use** under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](./LICENSE).  
+This project is **free for personal and educational use** under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](./LICENSE.md).  
 You may:
 - Use locally for learning and experimentation
 - Modify and study the code
@@ -78,7 +82,7 @@ Includes:
 - Priority email support
 - Free updates through 2026
 
-[View Commercial License Terms](./COMMERCIAL_LICENSE.md)
+[View Commercial License Terms](./END_USER_LICENSE_AGREEMENT.md)
 
 ---
 
