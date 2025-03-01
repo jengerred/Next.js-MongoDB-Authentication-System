@@ -387,7 +387,7 @@ To help others recreate this project, I’ve created a detailed tutorial that wa
 5. Securing routes with authentication middleware.
 6. Deploying the app on Vercel.
 
-You can find the tutorial [here](https://github.com/jengerred/Reusable-NEXT-User-Auth/wiki).
+You can find the tutorial [here](https://github.com/jengerred/Next.js-MongoDB-Authentication-System/wiki).
 
 ---
 
