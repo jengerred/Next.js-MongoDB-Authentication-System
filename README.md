@@ -21,10 +21,10 @@ Be sure to replace with your real keys
 3. Deploy to Vercel:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo)
 
-🎉 Congratulations! Your project is now live! 🎉
+## 🎉 Congratulations! Your project is now live! 🎉
 
 ### Just Exploring Locally? (Free & Open Source)
-Great! It's completely Free for personal and educational use!
+## Great! It's completely Free for personal and educational use!
 
 ## **Overview**
 This repository contains a secure, reusable authentication system built with **NEXT.js**, **MongoDB**, and **Vercel**. The project demonstrates best practices in mobile and web application security, including password hashing, token-based authentication, and data encryption. It adheres to industry standards like the **OWASP Mobile Application Security Verification Standard (MASVS)** and integrates robust security measures to protect user data.
@@ -99,7 +99,7 @@ To get started with this project, you'll need the following tools:
 #### 4. **Sign up or Sign in:** [GitHub](https://github.com/) 
    > A platform for hosting and collaborating on code repositories. You’ll use GitHub to push your project and deploy it with Vercel.  
 
-#### 5. **Sign up or Sign in:** [Vercel](https://vercel.com/) 
+#### 5. **Sign up or Sign in:** [Vercel](https://vercel.com/) (Commercial use only)
    > Deployment platform for hosting your application.
 
 ---
@@ -172,7 +172,7 @@ Start the development server locally:
 ```bash
 npm run dev
 ```
-🎉 Congratulations! You can now visit `http://localhost:3000` in your browser to view the app. 🎉
+## 🎉 Congratulations! You can now visit `http://localhost:3000` in your browser to view the app. 🎉
 
 ---
 ## 🚀 Deployment
@@ -251,6 +251,7 @@ To deploy this project using Vercel:
 
 
 🎉 Congratulations! Your project is now live! 🎉
+
 ---
 ## **Why This Project is Secure**
 1. **Password Security**:
