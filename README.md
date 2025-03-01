@@ -26,7 +26,7 @@ Be sure to replace with your real keys
 ---
 
 ## Just Exploring Locally? 
-# Great! It's Open Source and completely Free for personal and educational use!
+### Great! It's Open Source and completely Free for personal and educational use!
 
 ---
 
