@@ -3,13 +3,13 @@
 ## 🚀 Get Started
 
 ### Have a Commercial License Key? (Production Use)
-1. Clone repo & install:
+**1. Clone repo & install:**
 ```bash
 git clone https://github.com/jengerred/Reusable-NEXT-User-Auth.git
 cd Reusable-NEXT-User-Auth
 npm install
 ```
-2. Create and configure `.env.local`:
+**2. Create and configure `.env.local`:**
 ```bash
 touch .env.local
 echo "LICENSE_KEY=your_gumroad_key" >> .env.local # From purchase receipt 
@@ -17,7 +17,7 @@ echo "MONGO_URI=your_mongodb_connection_string" >> .env.local
 echo "JWT_SECRET=your_jwt_secret_key" >> .env.local
 echo "NODE_ENV=production" >> .env.local
 ```
-* Replace with your real keys 
+* *Replace with your real keys* 
 
 <details>
 <summary>How to Get Your MongoDB Connection String</summary>
@@ -52,9 +52,9 @@ echo "NODE_ENV=production" >> .env.local
   
 </details>
 
-3. Deploy to Vercel:
+**3. Deploy to Vercel:**
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo)
-* Add environment variables from your .env.local file
+* *Add environment variables from your .env.local file*
 
 <details>
 <summary>How to push repository to Gitub:</summary>
@@ -107,7 +107,6 @@ echo "NODE_ENV=production" >> .env.local
 </details>
 
 ## 🎉 Congratulations! Your project is now live! 🎉
-(see below for further instruction if needed)
 
 
 ## Just Exploring Locally? 
