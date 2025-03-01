@@ -83,7 +83,7 @@ echo "NODE_ENV=production" >> .env.local
 
 ---
 
-### 2. Deploy Your Project to Vercel and add Environment Variables:
+
 <details>
 <summary>How to Deploy to Vercel and Add Environment Variables:</summary>
 
