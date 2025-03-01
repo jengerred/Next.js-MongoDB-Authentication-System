@@ -15,18 +15,20 @@ touch .env.local
 echo "LICENSE_KEY=your_gumroad_key" >> .env.local # From purchase receipt 
 echo "MONGO_URI=your_mongodb_connection_string" >> .env.local
 echo "JWT_SECRET=your_jwt_secret_key" >> .env.local
+echo "NODE_ENV=production" >> .env.local
 ```
-Be sure to replace with your real keys
+* Replace with your real keys 
 
 3. Deploy to Vercel:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo)
+* Add environment variables from your .env.local file
 
 ## 🎉 Congratulations! Your project is now live! 🎉
+(see below for further instruction if needed)
 
----
 
 ## Just Exploring Locally? 
-### Great! It's Open Source and completely Free for personal and educational use!
+*Great! It's Open Source and completely Free for personal and educational use!*
 
 ---
 
@@ -254,7 +256,7 @@ To deploy this project using Vercel:
 3. Check your MongoDB Atlas database to confirm that user data is being stored correctly.
 
 
-🎉 Congratulations! Your project is now live! 🎉
+## 🎉 Congratulations! Your project is now live! 🎉
 
 ---
 ## **Why This Project is Secure**
