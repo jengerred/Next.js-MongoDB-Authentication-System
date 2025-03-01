@@ -160,7 +160,7 @@ You may **not**:
 
 ### Commercial Deployment 
 For production use and commercial applications:  
-**[Purchase Commercial License](https://gumroad.com/your-link)** ($97 one-time)  
+**[Purchase Commercial License](https://jengerred.gumroad.com/l/apjmhk)** ($97 one-time)  
 Includes:
 - Production deployment rights
 - Priority email support
