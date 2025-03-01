@@ -1,22 +1,30 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+// Test license key configuration
+const TEST_LICENSE_KEY = 'GUMROAD_TEST_KEY_1234'; // Your test key
+const LICENSE_KEY_REGEX = /^GUMROAD_[A-Z0-9_]+$/i; // Validates key format
 
 export function licenseMiddleware(request: NextRequest) {
   // Only check in production
   if (process.env.NODE_ENV === 'production') {
-    const validLicense = process.env.LICENSE_KEY === 'VALID_GUMROAD_KEY'
-    const isErrorPage = request.nextUrl.pathname.startsWith('/license-error')
+    // Validate license key format and value
+    const isValidKey = process.env.LICENSE_KEY 
+      && LICENSE_KEY_REGEX.test(process.env.LICENSE_KEY)
+      && process.env.LICENSE_KEY === TEST_LICENSE_KEY;
 
-    // Redirect to error page if invalid license and not already there
-    if (!validLicense && !isErrorPage) {
-      return NextResponse.redirect(new URL('/license-error', request.url))
+    const isErrorPage = request.nextUrl.pathname.startsWith('/license-error');
+
+    // Redirect to error page for invalid keys
+    if (!isValidKey && !isErrorPage) {
+      return NextResponse.redirect(new URL('/license-error', request.url));
     }
 
-    // Block access to error page with valid license
-    if (validLicense && isErrorPage) {
-      return NextResponse.redirect(new URL('/', request.url))
+    // Block access to error page with valid key
+    if (isValidKey && isErrorPage) {
+      return NextResponse.redirect(new URL('/', request.url));
     }
   }
   
-  return NextResponse.next()
+  return NextResponse.next();
 }
